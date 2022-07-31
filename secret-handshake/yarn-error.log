@@ -1,0 +1,57 @@
+Arguments: 
+  /nix/store/f3hinbnmayxgpmc63pivma6a5lzw0sa9-nodejs-16.15.0/bin/node /run/current-system/sw/bin/yarn install
+
+PATH: 
+  /Users/kevin/bin:/Users/kevin/bin:/Users/kevin/bin:/Users/kevin/bin:/Users/kevin/bin:/Users/kevin/bin:/Users/kevin/projects/others/zplug/repos/zplug/zplug/bin:/Users/kevin/projects/others/zplug/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/Users/kevin/.nix-profile/bin:/run/current-system/sw/bin:/nix/var/nix/profiles/default/bin:/usr/local/bin:/Users/kevin/projects/others/zplug/repos/skx/sysadmin-util:/Users/kevin/.yarn/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/usr/local/bin:/run/current-system/sw/bin:/Users/kevin/.nix-profile/bin/:/Users/kevin/Library/Android/sdk/platform-tools/::/opt/homebrew/bin:/usr/local/bin:/run/current-system/sw/bin:/Users/kevin/.nix-profile/bin/:/Users/kevin/Library/Android/sdk/platform-tools/::/opt/homebrew/bin:/usr/local/bin:/run/current-system/sw/bin:/Users/kevin/.nix-profile/bin/:/Users/kevin/Library/Android/sdk/platform-tools/::/opt/homebrew/bin:/usr/local/bin:/run/current-system/sw/bin:/Users/kevin/.nix-profile/bin/:/Users/kevin/Library/Android/sdk/platform-tools/::/opt/homebrew/bin:/usr/local/bin:/run/current-system/sw/bin:/Users/kevin/.nix-profile/bin/:/Users/kevin/Library/Android/sdk/platform-tools/:
+
+Yarn version: 
+  1.22.19
+
+Node version: 
+  16.15.0
+
+Platform: 
+  darwin arm64
+
+Trace: 
+  Error: getaddrinfo ENOTFOUND registry.yarnpkg.com
+      at GetAddrInfoReqWrap.onlookup [as oncomplete] (node:dns:71:26)
+
+npm manifest: 
+  {
+    "name": "@exercism/typescript-secret-handshake",
+    "version": "1.0.0",
+    "description": "Exercism exercises in Typescript.",
+    "private": true,
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/exercism/typescript"
+    },
+    "type": "module",
+    "engines": {
+      "node": "^14.13.1 || >=16.0.0"
+    },
+    "devDependencies": {
+      "@exercism/babel-preset-typescript": "^0.1.0",
+      "@exercism/eslint-config-typescript": "^0.4.1",
+      "@types/jest": "^27.4.0",
+      "@types/node": "^16.11.24",
+      "babel-jest": "^27.5.1",
+      "core-js": "^3.21.0",
+      "eslint": "^8.9.0",
+      "jest": "^27.5.1",
+      "typescript": "^4.5.4"
+    },
+    "scripts": {
+      "test": "yarn lint:types && jest --no-cache",
+      "lint": "yarn lint:types && yarn lint:ci",
+      "lint:types": "yarn tsc --noEmit -p .",
+      "lint:ci": "eslint . --ext .tsx,.ts"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
